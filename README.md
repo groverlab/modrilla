@@ -1,5 +1,5 @@
 # modrilla
-Java software for drilling holes in glass wafers on a CNC mill
+Java software for drilling holes in glass wafers on a CNC mill or Roland Modela
 
 If you're just looking for the Modrilla software, go to [http://web.mit.edu/wgrover/www/modrilla.html http://web.mit.edu/wgrover/www/modrilla.html].  For instructions on how to use Modrilla and a Modela mill to drill holes in glass, read on...
 
@@ -30,7 +30,7 @@ Modrilla is less useful if you only have a few holes to drill (preparing your CA
 
 # Preparing the DXF file #
 
-[[Image:modrilla1.png|frame|DXF file as seen on computer screen]]
+![DXF file as seen on computer screen](Modrilla1.png)
 
 You'll need a DXF file with circles placed at the locations where you want holes to be drilled--all circles in the file will be drilled, so make sure that there are circles only where you want holes.  Lines, polylines, etc. are ignored.  Units for the DXF file can be microns, mm, cm, mils, or inches, and the absolute locations of the holes don't matter, as long as their arrangement relative to each other is correct.  Most any program can be used to generate the DXF (AutoCAD, Adobe Illustrator, etc.).
 
@@ -51,7 +51,7 @@ Temporarily bonding your "good" piece of glass to a "bad" backing piece of glass
 
 (For Modela-specific instructions, see the next section)
 
-[[Image:modrilla2.png|frame|Orientation of glass piece on mill or Modela platform]]
+![Orientation of glass piece on mill or Modela platform](Modrilla2.png)
 
 1. Install your bit.  Make sure the bit will be able to reach the stage where the glass will be.  This isn't a problem with longer bits, but short bits may not be able to reach.
 1. Place your stack of glass pieces on the mill's platform, '''rotated about 45 degrees counterclockwise from the orientation of the glass in your DXF file.'''  See the figures for an example.  This angle is '''not precise,''' just roughly 45 degrees.  (Why rotate?  Orienting your glass at an angle <math>\theta</math> such that <math>\sin \theta</math> and <math>\cos \theta</math> are between 0 and 1 and <math>\tan \theta </math> is approximately 1 simplifies the trigonometry involved in converting the hole locations from the DXF file's coordinates to the mill's coordinates.)  Make sure that all hole locations fall within the mill's range of motion (the grid pattern printed on the platform).
