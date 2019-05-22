@@ -54,7 +54,7 @@ Temporarily bonding your "good" piece of glass to a "bad" backing piece of glass
 ![Orientation of glass piece on mill or Modela platform](Modrilla2.png)
 
 1. Install your bit.  Make sure the bit will be able to reach the stage where the glass will be.  This isn't a problem with longer bits, but short bits may not be able to reach.
-1. Place your stack of glass pieces on the mill's platform, '''rotated about 45 degrees counterclockwise from the orientation of the glass in your DXF file.'''  See the figures for an example.  This angle is '''not precise,''' just roughly 45 degrees.  (Why rotate?  Orienting your glass at an angle <math>\theta</math> such that <math>\sin \theta</math> and <math>\cos \theta</math> are between 0 and 1 and <math>\tan \theta </math> is approximately 1 simplifies the trigonometry involved in converting the hole locations from the DXF file's coordinates to the mill's coordinates.)  Make sure that all hole locations fall within the mill's range of motion (the grid pattern printed on the platform).
+1. Place your stack of glass pieces on the mill's platform, '''rotated about 45 degrees counterclockwise from the orientation of the glass in your DXF file.'''  See the figures for an example.  This angle is '''not precise,''' just roughly 45 degrees.  (Why rotate?  Orienting your glass at an angle `&theta;` such that `sin &theta;` and `cos &theta;` are between 0 and 1 and `tan &theta;` is approximately 1 simplifies the trigonometry involved in converting the hole locations from the DXF file's coordinates to the mill's coordinates.)  Make sure that all hole locations fall within the mill's range of motion (the grid pattern printed on the platform).
 
 # Placing the glass piece on the Modela #
 
